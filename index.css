@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: auto;
+}
+
+ul {
+  width: 100%;
+  padding: 100px;
+  overflow: hidden;
+}
+
+li {
+  padding: 20px;
+  list-style: none;
+  height: 300px;
+  overflow: hidden;
+}
+
+.dialog {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  width: 100%;
+  cursor: pointer;
+  background-color: white;
+  /* opacity: 0.5; */
+}
+
+.open {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+}
+
+.animate {
+  transition: 1s;
+}
+
+.animate--out {
+  transition: 0.5s;
+}
+
+.dialog_content {
+  padding: 50px;
+}
+
+li:nth-of-type(3)  article {
+  width: 100px;
+}
+
+.dialog_banner > img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.dialog_coverTitle {
+  margin: 0;
+  transition: 0.5s;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+  opacity: 1;
+}
